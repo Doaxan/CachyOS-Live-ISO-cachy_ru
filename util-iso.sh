@@ -79,12 +79,12 @@ Welcome to your [38;2;23;147;209mCachyOS[0m!
 EOF
 }
 
-fetch_cachyos_mirrorlist() {
-    mkdir -p ${src_dir}/archiso/airootfs/etc/pacman.d
-    local _mirrorlist_url="https://github.com/CachyOS/CachyOS-PKGBUILDS/raw/master/cachyos-mirrorlist/cachyos-mirrorlist"
-
-    curl -sSL "${_mirrorlist_url}" > ${src_dir}/archiso/airootfs/etc/pacman.d/cachyos-mirrorlist
-}
+#fetch_cachyos_mirrorlist() {
+#    mkdir -p ${src_dir}/archiso/airootfs/etc/pacman.d
+#    local _mirrorlist_url="https://github.com/CachyOS/CachyOS-PKGBUILDS/raw/master/cachyos-mirrorlist/cachyos-mirrorlist"
+#
+#    curl -sSL "${_mirrorlist_url}" > ${src_dir}/archiso/airootfs/etc/pacman.d/cachyos-mirrorlist
+#}
 
 change_grub_version() {
     local _version="$1"
@@ -133,7 +133,7 @@ prepare_profile(){
     change_grub_version "${_iso_version}"
 
     # Fetch up-to-date version of CachyOS repo mirrorlist
-    fetch_cachyos_mirrorlist
+    #fetch_cachyos_mirrorlist
 
     generate_motd
 
