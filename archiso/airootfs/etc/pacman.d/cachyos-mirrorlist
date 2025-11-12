@@ -1,0 +1,8 @@
+Server = https://mirror.lesviallon.fr/cachy/repo/$arch/$repo
+Server = https://mirror.yandex.ru/cachyos/repo/$arch/$repo
+Server = https://cdn77.cachyos.org/repo/$arch/$repo
+Server = https://mirrors.ustc.edu.cn/cachyos/repo/$arch/$repo
+Server = https://mirror.limda.net/cachy/repo/$arch/$repo
+Server = https://mirror.nju.edu.cn/cachyos/repo/$arch/$repo
+Server = https://mirror.hb9hil.org/cachyos/repo/$arch/$repo
+Server = https://no.mirror.cx/cachyos/repo/$arch/$repo
